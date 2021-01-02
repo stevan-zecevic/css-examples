@@ -3,13 +3,22 @@ body {
   background-color: #dcf5ff;
   margin: 0;
   height: 100vh;
-  display: -ms-grid;
-  display: grid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   justify-items: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   font-family: "Nunito", sans-serif;
+}
+
+.container {
+  margin: 50px;
 }
 
 .inner {
@@ -52,5 +61,135 @@ body {
 .inner p {
   color: white;
   font-size: 0.9rem;
+}
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  width: 800px;
+  height: 240px;
+}
+
+.cards .card {
+  width: 160px;
+  padding: 20px;
+  height: 200px;
+  border-radius: 10px;
+  background-color: #414141;
+  color: white;
+  -webkit-box-shadow: -15px 0px 50px black;
+          box-shadow: -15px 0px 50px black;
+  position: absolute;
+}
+
+.cards .card p {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.cards .card p span {
+  color: #8a8a8a;
+  margin: 0;
+}
+
+.cards .card span {
+  display: block;
+  margin-top: 50px;
+}
+
+.cards .card:first-child() {
+  left: 0px;
+  z-index: 0;
+}
+
+.cards .card:nth-child(2) {
+  left: 120px;
+  z-index: 1;
+}
+
+.cards .card:nth-child(3) {
+  left: 240px;
+  z-index: 2;
+}
+
+.cards .card:nth-child(4) {
+  left: 360px;
+  z-index: 3;
+}
+
+.cards .card:last-child {
+  left: 480px;
+  z-index: 4;
+  -webkit-animation: none;
+          animation: none;
+}
+
+.cards .card:last-child:hover {
+  -webkit-animation: none;
+          animation: none;
+}
+
+.cards .card:hover {
+  -webkit-animation: rotation 0.5s forwards linear;
+          animation: rotation 0.5s forwards linear;
+}
+
+@-webkit-keyframes rotation {
+  100% {
+    -webkit-transform: translateX(-50px) rotate(20deg);
+            transform: translateX(-50px) rotate(20deg);
+  }
+}
+
+@keyframes rotation {
+  100% {
+    -webkit-transform: translateX(-50px) rotate(20deg);
+            transform: translateX(-50px) rotate(20deg);
+  }
+}
+
+@-webkit-keyframes reverteRotation {
+  100% {
+    -webkit-transform: translateX(50px) rotate(-20deg);
+            transform: translateX(50px) rotate(-20deg);
+  }
+}
+
+@keyframes reverteRotation {
+  100% {
+    -webkit-transform: translateX(50px) rotate(-20deg);
+            transform: translateX(50px) rotate(-20deg);
+  }
+}
+
+svg {
+  width: 100px;
+  height: 100px;
+}
+
+svg rect {
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke-width: 100px;
+  stroke: #00adff;
+  stroke-dasharray: 100;
+  stroke-dashoffset: 50%;
+  -webkit-animation: loadingAnimation 2s linear infinite;
+          animation: loadingAnimation 2s linear infinite;
+}
+
+@-webkit-keyframes loadingAnimation {
+  to {
+    stroke-dashoffset: 250%;
+  }
+}
+
+@keyframes loadingAnimation {
+  to {
+    stroke-dashoffset: 250%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
