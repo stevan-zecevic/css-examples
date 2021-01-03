@@ -48,5 +48,38 @@
       <rect></rect>
     </svg>
   </div>
+
+  <div class="container">
+    <div class="clock">
+      <div class="hour">
+        <div class="hr" id="hr"></div>
+      </div>
+      <div class="min">
+        <div class="mn" id="mn"></div>
+      </div>
+      <div class="sec">
+        <div class="sc" id="sc"></div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    setInterval(() => {
+      const degree = 6;
+      const hr = document.querySelector("#hr");
+      const mn = document.querySelector("#mn");
+      const sc = document.querySelector("#sc");
+
+      const day = new Date();
+      const hh = day.getHours() * 30;
+      const mm = day.getMinutes() * degree;
+      const ss = day.getSeconds() * degree;
+
+      hr.style.transform = `rotateZ(${hh + mm/12}deg)`;
+      mn.style.transform = `rotateZ(${mm}deg)`;
+      sc.style.transform = `rotateZ(${ss}deg)`;
+    }, 1000);
+    
+  </script>
 </body>
 </html>
