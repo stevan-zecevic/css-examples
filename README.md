@@ -8,3 +8,5 @@ Goal of this repository is to create single or multiple css elements every day
 02.01 - Article cards(similar to https://css-tricks.com/ cards) and loading icon with small animation
 
 03.01 - Analog clock
+
+04.01 - https://cssbattle.dev/ doing first set of exercises
