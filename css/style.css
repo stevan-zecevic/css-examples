@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap");
 body {
   background-color: #dcf5ff;
   margin: 0;
@@ -287,5 +288,130 @@ svg rect {
   background: #2f00ff;
   z-index: 9;
   border-radius: 6px 6px 0 0;
+}
+
+.basketball-example {
+  height: 400px;
+  width: 500px;
+  height: 200px;
+  background-color: #1167b1;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#1167b1), color-stop(70%, #7336c3));
+  background-image: linear-gradient(to bottom right, #1167b1, #7336c3 70%);
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 1;
+}
+
+.basketball-example .text {
+  font-weight: 800;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+.basketball-example .text h1 {
+  font-size: 125px;
+  margin: 0;
+  padding: 0;
+}
+
+.basketball-example .text h2 {
+  margin: 0;
+}
+
+.basketball-example .o-basket {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.basketball-example .o-basket .basketball-icon {
+  width: 75px;
+  height: 75px;
+  background-color: #bf1253;
+  border-radius: 50%;
+  border: 10px solid #ab1b38;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 10px;
+  -webkit-animation: upDown 0.5s infinite;
+          animation: upDown 0.5s infinite;
+}
+
+.basketball-example .o-basket .line {
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-right: 10px solid #ab1b38;
+  background-color: transparent;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.basketball-example .o-basket .middle {
+  width: 300px;
+  height: 300px;
+  -webkit-transform: translateX(-6%) translateY(-22%) rotate(-19deg);
+          transform: translateX(-6%) translateY(-22%) rotate(-19deg);
+}
+
+.basketball-example .o-basket .left {
+  -webkit-transform: translateX(15%) translateY(-82%) rotate(67deg);
+          transform: translateX(15%) translateY(-82%) rotate(67deg);
+}
+
+.basketball-example .o-basket .right {
+  -webkit-transform: translateX(54%) translateY(18%) rotate(-114deg);
+          transform: translateX(54%) translateY(18%) rotate(-114deg);
+}
+
+.basketball-example .o-basket .shadow {
+  width: 70px;
+  height: 20px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+}
+
+@-webkit-keyframes upDown {
+  50% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+}
+
+@keyframes upDown {
+  50% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
 }
 /*# sourceMappingURL=style.css.map */

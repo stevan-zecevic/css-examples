@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap');
 
 body {
   background-color: #dcf5ff;
@@ -268,3 +269,94 @@ svg rect {
   z-index: 9;
   border-radius: 6px 6px 0 0;
 }
+
+.basketball-example {
+  height: 400px;
+  width: 500px;
+  height: 200px;
+  background-color: #1167b1;
+  background-image: linear-gradient(to bottom right, #1167b1 , #7336c3 70%);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1;
+
+  .text {
+    font-weight: 800;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+
+    h1 {
+      font-size: 125px;
+      margin: 0;
+      padding: 0;
+    }
+
+    h2 {
+      margin: 0;
+    }
+  }
+
+  .o-basket {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .basketball-icon {
+      width: 75px;
+      height: 75px;
+      background-color: #bf1253;
+      border-radius: 50%;
+      border: 10px solid #ab1b38;
+      overflow: hidden;
+      position: relative;
+      margin-bottom: 10px;
+      animation: upDown 0.5s infinite;
+    }
+  
+    .line {
+      position: absolute;
+      right: 0;
+      top: 0;
+      border-right: 10px solid #ab1b38;
+      background-color: transparent;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+    }
+    
+    .middle {
+      width: 300px;
+      height: 300px;
+      transform: translateX(-6%) translateY(-22%) rotate(-19deg)
+    }
+  
+    .left {
+      transform: translateX(15%) translateY(-82%) rotate(67deg);
+    }
+  
+    .right {
+      transform: translateX(54%) translateY(18%) rotate(-114deg);
+    }
+
+    .shadow {
+      width: 70px;
+      height: 20px;
+      background: rgba(0, 0, 0, 0.3);
+      border-radius: 50%;
+      // margin-top: 30px;
+      filter: blur(10px);
+    }
+  }
+}
+
+@keyframes upDown {
+  50% {
+    transform: translateY(10px);
+  }
+}
+
