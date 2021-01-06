@@ -10,3 +10,5 @@ Goal of this repository is to create single or multiple css elements every day
 03.01 - Analog clock
 
 04.01 - https://cssbattle.dev/ doing first set of exercises
+
+05.01 - same as last day, doing cssbattle making small icons
