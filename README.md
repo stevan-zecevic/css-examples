@@ -16,3 +16,9 @@ Goal of this repository is to create single or multiple css elements every day
 06.01 - created element from dribbler (https://dribbble.com/shots/4137507-Hello-Dribbble) and added animation to basketball
 
 09.01 - started new project Fizio Centar (done hero section)
+
+17.01.2021 - done most of the icons on cssbattle and done some from dribbler so this will conclude this repo
+
+
+
+Moving to live project
